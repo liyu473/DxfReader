@@ -1,0 +1,24 @@
+﻿<Application x:Class="DXFReaderDemo.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:DXFReaderDemo"
+             xmlns:ui="http://schemas.inkore.net/lib/ui/wpf/modern">
+    <Application.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ui:ThemeResources />
+                <ui:XamlControlsResources />
+                <ResourceDictionary Source="pack://application:,,,/LyuWpfHelper;component/Themes/Generic.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/DXFReaderCore;component/Themes/Generic.xaml" />
+            </ResourceDictionary.MergedDictionaries>
+
+            <Style x:Key="CardStyle" TargetType="Border">
+                <Setter Property="Background" Value="{DynamicResource CardBackgroundFillColorDefaultBrush}" />
+                <Setter Property="BorderBrush" Value="{DynamicResource CardStrokeColorDefaultBrush}" />
+                <Setter Property="BorderThickness" Value="1" />
+                <Setter Property="CornerRadius" Value="8" />
+                <Setter Property="Padding" Value="20" />
+            </Style>
+        </ResourceDictionary>
+    </Application.Resources>
+</Application>

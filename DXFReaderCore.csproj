@@ -12,4 +12,11 @@
     <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="10.0.5" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Compile Remove="DXFReaderDemo\**" />
+    <EmbeddedResource Remove="DXFReaderDemo\**" />
+    <None Remove="DXFReaderDemo\**" />
+    <Page Remove="DXFReaderDemo\**" />
+  </ItemGroup>
+
 </Project>
